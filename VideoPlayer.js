@@ -31,6 +31,7 @@ export default class VideoPlayer extends Component {
     volume: 1,
     title: '',
     rate: 1,
+    renderTopControls: true,
   };
 
   constructor(props) {
@@ -925,6 +926,10 @@ export default class VideoPlayer extends Component {
    * view and spaces them out.
    */
   renderTopControls() {
+    if (!this.props.renderTopControls) {
+      return null;
+    }
+
     const backControl = this.props.disableBack
       ? this.renderNullControl()
       : this.renderBack();
