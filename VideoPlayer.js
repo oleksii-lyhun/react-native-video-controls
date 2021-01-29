@@ -1397,7 +1397,7 @@ const styles = {
   seekbar: StyleSheet.create({
     container: {
       alignSelf: 'stretch',
-      height: 28,
+      height: 20,
       marginLeft: 20,
       marginRight: 20,
     },
